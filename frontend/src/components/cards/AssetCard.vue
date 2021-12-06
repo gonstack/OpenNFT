@@ -114,7 +114,7 @@
           />
         </svg>
         <router-link to="/all-items">
-          All items
+          Tất cả tài sản
         </router-link>
         <svg
           width="6"

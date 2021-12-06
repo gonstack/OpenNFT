@@ -35,7 +35,7 @@
           </div>
           <div class="px-1 flex flex-col justify-between ml-2 pl-2 text-left">
             <dt class="text-sm leading-5 font-medium text-gray-500 mb-2">
-              Highest Bid
+              Trả giá cao nhất
             </dt>
             <dd class="text-lg leading-7 font-normal truncate my-auto">
               {{ highestBidDisplay }}

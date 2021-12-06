@@ -8,7 +8,7 @@
         v-if="assetsForSale.length"
         class="flex flex-col mb-8 pb-6 pl-3 sm:pl-10 pr-6 sm:pr-20"
       >
-        <AssetTitle title="For Sale" />
+        <AssetTitle title="Đang đăng bán" />
         <div class="flex flex-wrap justify-center md:max-w-7xl mx-auto">
           <div
             v-for="asset in assetsForSale"
@@ -26,7 +26,7 @@
         v-if="highestBids.length"
         class="flex flex-col mb-8 py-6 pl-3 sm:pl-10 bg-gray-200 rounded-l-3xl pr-6 sm:pr-20"
       >
-        <AssetTitle title="Highest Bids" />
+        <AssetTitle title="Trả giá cao nhất" />
         <div class="flex flex-wrap justify-center md:max-w-7xl mx-auto">
           <div
             v-for="asset in highestBids"
