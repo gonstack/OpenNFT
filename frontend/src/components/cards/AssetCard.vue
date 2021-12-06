@@ -187,14 +187,14 @@
               <ActionButton
                 v-if="userHasAsset && applicationData['A']"
                 class="mt-2"
-                label="Cancel Offer"
+                label="Hủy Offer"
                 :execute="openCancelAsk"
                 :validate="checkIfUserHasAsk"
                 component="t-white-button"
               />
               <ActionButton
                 v-if="!userHasAsset && applicationData['A']"
-                label="Buy Now"
+                label="Mua ngay"
                 :validate="validateBuyNow"
                 :execute="openBuyNow"
               />
@@ -202,14 +202,14 @@
             <div class="mt-4 mx-auto w-5/6">
               <ActionButton
                 v-if="!userHasAsset"
-                label="Place a bid"
+                label="Đặt giá thầu"
                 :execute="openMakeOffer"
                 component="t-light-button"
               />
               <ActionButton
                 v-if="userBid"
                 class="mt-2"
-                label="Cancel"
+                label="Hủy"
                 :execute="openCancelBid"
                 :validate="checkIfUserHasBid"
                 component="t-white-button"
@@ -217,7 +217,7 @@
               <ActionButton
                 v-if="userHasAsset && hasBid"
                 class="mt-2"
-                label="Sell Now"
+                label="Mở bán ngay"
                 :execute="openSellNow"
                 :validate="validateSellNow"
               />
@@ -373,7 +373,7 @@ export default {
       return this.highestValueDisplay === '-' ? 'No purchase offers' : this.userHasAsset && this.applicationData['A'] ? 'Best buyer offers' : 'Highest Bid';
     },
     priceButtonLabel() {
-      return this.applicationData['A'] ? 'Change Price' : 'Set Price';
+      return this.applicationData['A'] ? 'Thay đổi giá' : 'Đặt giá';
     },
     priceButtonComponent() {
       return this.applicationData['A'] && this.hasBid ? 't-light-button' : 't-button';
