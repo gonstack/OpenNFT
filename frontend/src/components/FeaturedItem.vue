@@ -42,7 +42,7 @@
         <div class="mr-auto w-5/6">
           <ActionButton
             v-if="!userHasAsset && item.price"
-            label="Buy Now"
+            label="Mua ngay"
             :validate="validateBuyNow"
             :execute="openBuyNow"
             component="t-featured-button"
@@ -52,7 +52,7 @@
           <ActionButton
             v-if="!userHasAsset"
             class="indigo-700-imp"
-            label="Place a bid"
+            label="Đặt giá thầu"
             :execute="openMakeOffer"
             component="t-white-featured-button"
           />

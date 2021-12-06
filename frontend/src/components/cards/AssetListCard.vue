@@ -110,9 +110,9 @@ export default {
     },
     buttonLabel() {
       if (this.asset.owner_address) {
-        return this.account === this.asset.owner_address ? 'Show my NFT' : 'Place a bid';
+        return this.account === this.asset.owner_address ? 'NFT của tôi' : 'Đặt giá thầu';
       } else {
-        return this.account === this.asset.holding_address ? 'Show my NFT' : 'Place a bid';
+        return this.account === this.asset.holding_address ? 'NFT của tôi' : 'Đặt giá thầu';
       }
     }
   },
