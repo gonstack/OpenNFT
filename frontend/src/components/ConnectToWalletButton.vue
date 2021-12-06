@@ -2,7 +2,7 @@
   <t-nav-button
     @click="onConnect"
   >
-    Connect To Wallet
+    Liên kết với Ví
   </t-nav-button>
 </template>
 <script>

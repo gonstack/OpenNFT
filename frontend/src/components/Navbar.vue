@@ -166,27 +166,27 @@ export default {
     entries() {
       return [
         {
-          label: 'Home',
+          label: 'Trang chủ',
           to: '/',
           exact: true
         },
         {
-          label: 'All Items',
+          label: 'Tất cả các tài sản',
           to: '/all-items',
           exact: true
         },
         {
-          label: 'For Sale',
+          label: 'Đang đăng bán',
           to: '/for-sale',
           exact: true
         },
         {
-          label: 'Highest Bids',
+          label: 'Trả giá cao nhất',
           to: '/highest-bids',
           exact: true
         },
         {
-          label: 'Recent',
+          label: 'Gần nhất',
           to: '/recently-added',
           exact: true
         }
