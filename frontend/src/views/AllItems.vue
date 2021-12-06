@@ -1,6 +1,6 @@
 <template>
   <div class="mx-6 mt-6 py-6 px-16">
-    <AssetTitle title="All Items" />
+    <AssetTitle title="Tất cả tài sản" />
     <div class="flex flex-wrap justify-center sm:justify-start">
       <div
         v-for="asset in assets"

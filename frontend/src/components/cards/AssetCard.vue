@@ -380,11 +380,11 @@ export default {
     },
     navLabel() {
       if (this.applicationData['A']) {
-        return 'For Sale';
+        return 'Đang đăng bán';
       } else if (this.assetData['highest_bid']) {
-        return 'Highest Bids';
+        return 'Trả giá cao nhất';
       }
-      return 'Recent';
+      return 'Gần nhất';
     },
     navLink() {
       if (this.applicationData['A']) {
