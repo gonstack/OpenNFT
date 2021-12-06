@@ -69,7 +69,27 @@
               </a>
             </div>
           </div>
-          
+          <div class="flex">
+            <div class="hidden md:ml-6 md:flex md:space-x-8">
+              <router-link
+                v-for="entry in entries"
+                :key="entry.to"
+                :to="entry.to"
+                :exact="entry.exact"
+                active-class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-base font-medium"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-base font-medium"
+              >
+                {{ entry.label }}
+              </router-link>
+              <a
+                href="#"
+                target="blank"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-base font-medium"
+              >
+                Liên hệ
+              </a>
+            </div>
+          </div>
           <div class="right-0 flex pr-2 static inset-auto ml-6 pr-0">
             <div
               v-if="!rawStore.connected"
